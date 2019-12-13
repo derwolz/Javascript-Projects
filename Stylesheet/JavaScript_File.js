@@ -11,9 +11,17 @@ document.write(x + y + z + h);
 }
 
 
-function clickToBlue() {
-    
-    document.getElementById("pdemo").innerHTML = "resulst";
+function Makered() {
+    result = document.getElementById("pressedKey").innerText;
+    result = result.fontcolor("red");
+    document.getElementById("pressedKey").innerHTML = result;
+
+}
+function Makeblack() {
+    result = document.getElementById("pressedKey").innerText;
+    result = result.fontcolor("green");
+    document.getElementById("pressedKey").innerHTML = result;
+
 }
 
 function myFunction() {
