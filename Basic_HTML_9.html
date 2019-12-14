@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number 9</title>
+        <meta charset="utf-8">
+        <script src="./Stylesheet/Basic_JavaScript_9.js"></script>
+        <link rel="stylesheet" href="./Stylesheet/Basic_CSS_9.css">
+    </head>
+    <body>
+        <p>How long should the countdowntimer last?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p>
+
+        <!--Slideshow attmpt-->
+        <div class="slideshow-container">
+            <!--images with number and caption text-->
+            <div class="slide-fader fade">
+                <div class="slide-number"></div>
+                <img src="./Stylesheet/images/cat_1.jpg" alt="cat medical book">
+                <div class="slide-caption">Subject one: a typical case of illegal smol cat</div>    
+            </div>
+            
+            <div class="slide-fader fade">
+                <div class="slide-number"></div>
+                <img src="./Stylesheet/images/cat_2.jpg" alt="window barred gats">
+                <div class="slide-caption">Outside view of a smol cat prison</div>    
+            </div>
+            
+            <div class="slide-fader fade">
+                <div class="slide-number"></div>
+                <img src="./Stylesheet/images/cat_3.jpg" alt="cat mecha doll">
+                <div class="slide-caption">smol cats have a predisposition to violence, hence illegal.</div>    
+            </div>
+                   <!--Buttons-->             
+            <a class="slide-previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+                
+        </div>
+        <br>
+        <div styl="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>currentSlide(1)</script>
+    </body>
+</html>
